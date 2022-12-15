@@ -1,21 +1,14 @@
 {
   "itens": [
     {
-      "product": "Arroz",
-      "quant": "2K",
-      "id": 4,
-      "status": false
-    },
-    {
       "product": "Bananaos",
       "quant": "2 Cach",
       "id": 10,
-      "status": true
+      "status": false
     },
     {
-      "product": "Melao",
-      "quant": "2 ",
-      "status": false,
+      "product": "ewewwe1",
+      "quant": "2k",
       "id": 11
     }
   ]

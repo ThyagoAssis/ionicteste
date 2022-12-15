@@ -11,27 +11,22 @@
  <ion-list>
   <ion-item-sliding *ngFor="let product of products">
     <ion-item mode="ios" (click)="presentActionSheet(product)">
-
-
-      <ion-icon name="radio-button-off" *ngIf="!product.status" ></ion-icon>      
+      <ion-icon name="radio-button-off" *ngIf="!product.status" ></ion-icon>
       <ion-label *ngIf="!product.status"><strong>Item: </strong>{{product.product}}</ion-label>
       <ion-label *ngIf="!product.status"> <strong>Qtd: </strong>{{product.quant}}</ion-label>
 
       <ion-icon name="checkmark-circle" *ngIf="product.status"></ion-icon>
       <ion-label *ngIf="product.status"><del><strong>Item: </strong>{{product.product}}</del></ion-label>
       <ion-label *ngIf="product.status"> <del><strong>Qtd: </strong>{{product.quant}}</del></ion-label>
-
-
-
     </ion-item>
 
 
     <ion-item-options>
       <ion-item-option color="danger" (click)="deletar(product.id)"> Deletar</ion-item-option>
-      <ion-item-option color="success">Editar</ion-item-option>
+      <ion-item-option color="success" [routerLink]="['/form', product.id]">Editar</ion-item-option>
     </ion-item-options>
   </ion-item-sliding>
-  
+
  </ion-list>
 
  <ion-fab horizontal="end" vertical="bottom" >

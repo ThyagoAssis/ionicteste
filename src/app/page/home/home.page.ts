@@ -10,7 +10,7 @@ import { DatabaseService  } from '../../service/database.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  
+
   status = false;
   image = "https://cdn.pixabay.com/photo/2016/05/16/17/59/strawberries-1396330__340.jpg";
   products: Itens[] = [];
@@ -35,7 +35,7 @@ export class HomePage {
       this.toast("Iten Excluido!","danger");
       location.reload();
     }
-    
+
   }
 
   async toast(message: string, color: string){
@@ -71,14 +71,14 @@ export class HomePage {
           name: 'quantidade',
           type: 'text',
           placeholder: 'Informe a Quantidade:'
-        }      
+        }
       ],
       buttons: [
         {
           text: 'Cancel',
           role: 'cancel',
           handler: () => {
-            
+
           },
         },
         {
@@ -88,12 +88,12 @@ export class HomePage {
 
             let formulario = {product: form.item, quant: form.quantidade, status: false}
             try{
-              this.dataBase.postFoto(formulario); 
+              this.dataBase.postFoto(formulario);
             }finally{
               this.toast("Item Cadastrado","success");
-              location.reload();
+              //location.reload();
             }
-            
+
           },
         },
       ]
@@ -113,7 +113,7 @@ export class HomePage {
             item.status = !item.status;
           }
         },
-        
+
         {
           text: 'Cancel',
           role: 'cancel',
