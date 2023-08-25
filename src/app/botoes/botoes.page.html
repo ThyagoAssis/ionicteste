@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar mode="ios" color="dark">
+
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Botões</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Botões Padrão</h2>
+  <ion-button>Default</ion-button> 
+  <ion-button [disabled]="true">Disabled</ion-button>
+
+  <h2>Estendido</h2>
+  <ion-button expand="block">Block</ion-button> 
+  <ion-button expand="full">Full</ion-button>
+
+  <h2>Shape (Redondo)</h2>
+  <ion-button>Default</ion-button> 
+  <ion-button shape="round">Round</ion-button>
+
+  <h2>Botão fill</h2>
+  <ion-button fill="clear">Clear</ion-button>
+  <ion-button fill="outline">Outline</ion-button>
+  <ion-button fill="solid">Solid</ion-button>
+
+  <h2>Tamanhos</h2>
+  <ion-button size="small">Small</ion-button>
+  <ion-button size="default">Default</ion-button>
+  <ion-button size="large">Large</ion-button>
+
+  <h2>Botao com icone</h2>
+  <ion-button color="danger">
+    <ion-icon slot="start" name="home"></ion-icon>
+    Left Icon
+  </ion-button>
+  
+  <ion-button>
+    Right Icon
+    <ion-icon slot="end" name="trash"></ion-icon>
+  </ion-button>
+  
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+
+  <h2>Cores</h2>
+  <ion-button>Default</ion-button>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">Success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="light">Light</ion-button>
+  <ion-button color="medium">Medium</ion-button>
+  <ion-button color="dark">Dark</ion-button>
+
+  <h2>Personalizado</h2>
+  <ion-button fill="outline" color="success" size="small">
+    Personalizado
+  </ion-button>
+
+</ion-content>

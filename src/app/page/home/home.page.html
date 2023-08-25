@@ -1,12 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" >
+
+  <!-- A proriedade color define as cores com base no arquivo variable.scss -->
+  <!-- a propriedade mode altera o mode de exibição -->
+  <ion-toolbar color="dark" mode="ios">
     <ion-title>
-      Blank
+      {{titulo}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" >
+<ion-content [fullscreen]="true">
+  <ion-label>Ola Mundo!</ion-label>
+  <h2>Componentes</h2>
+  <ion-button routerLink="/botoes">Pagina de Botões</ion-button>
+  <ion-button routerLink="/alerta" color="danger">Pagina de alerta</ion-button>
 
 
 </ion-content>
